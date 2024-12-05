@@ -1,0 +1,293 @@
+/* Variables de colores */
+:root {
+    --bg-color: #f3f9fe;
+    --text-color: #2c3e50;
+    --accent-color: #007bff;
+    --button-color: #0056b3;
+    --button-hover: #004085;
+  }
+  
+  /* Modo oscuro */
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #1e88e5;
+    --button-color: #1565c0;
+    --button-hover: #0d47a1;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  label.upload-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #slides-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .slide {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+    height: 180px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .draggable {
+    position: absolute;
+    cursor: grab;
+  }
+  
+  .draggable:active {
+    cursor: grabbing;
+  }
+  
+
+
+
+
+  /* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Controles */
+  .editor-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  
+  #slides-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .slide {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+  }
+  
+  .draggable {
+    position: absolute;
+    cursor: grab;
+  }
+  
+  .draggable:active {
+    cursor: grabbing;
+  }
+  
+
+
+
+  /* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Controles */
+  .editor-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  
+  #slides-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .slide {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+  }
+  
+  /* Estilo para los cuadros de texto */
+  .text-box {
+    position: absolute;
+    border: 2px dashed #007bff;
+    padding: 10px;
+    resize: both;
+    overflow: hidden;
+    background-color: rgba(0, 123, 255, 0.1);
+    font-family: Arial, sans-serif;
+    cursor: move;
+    word-wrap: break-word;
+  }
+  
+  .text-box:active {
+    cursor: grabbing;
+  }
+  
+  .draggable {
+    position: absolute;
+    cursor: grab;
+  }
+  
+  .draggable:active {
+    cursor: grabbing;
+  }
+  
+  /* Estilo para las imágenes */
+  .resizable-img {
+    position: absolute;
+    cursor: move;
+    border: 2px solid #007bff;
+  }
+  
+  .resizable-img .resize-handle {
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+  }
+  
+
+/* Estilo para los cuadros de texto */
+.text-box {
+    position: absolute;
+    border: 2px dashed #007bff;
+    padding: 10px;
+    resize: both;
+    overflow: hidden;
+    background-color: rgba(0, 123, 255, 0.1);
+    font-family: Arial, sans-serif;
+    cursor: move;
+    word-wrap: break-word;
+    min-width: 100px;
+    min-height: 30px;
+  }
+  
+  /* Estilo para las imágenes */
+  .resizable-img {
+    position: absolute;
+    cursor: move;
+    border: 2px solid #007bff;
+    min-width: 50px;
+    min-height: 50px;
+  }
+  
+  /* Estilo para el manejador de redimensionado */
+  .resizable-img .resize-handle {
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+  }
+  
+  /* Estilo para cuando el elemento es seleccionado */
+  .selected {
+    border: 2px solid red;
+  }
+  

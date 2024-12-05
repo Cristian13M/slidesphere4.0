@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlideSphere - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SlideSphere</h1>
+  </header>
+
+  <main>
+    <section id="auth-section">
+      <h2>Bienvenido a SlideSphere</h2>
+      <p>La plataforma ideal para crear presentaciones interactivas y dinámicas.</p>
+      <div class="form-container">
+        <div id="login-form">
+          <h3>Iniciar Sesión</h3>
+          <input type="email" id="login-email" placeholder="Correo electrónico" required>
+          <input type="password" id="login-password" placeholder="Contraseña" required>
+          <button onclick="login()">Iniciar Sesión</button>
+        </div>
+        <div id="register-form">
+          <h3>Registrarse</h3>
+          <input type="text" id="register-name" placeholder="Nombre completo" required>
+          <input type="email" id="register-email" placeholder="Correo electrónico" required>
+          <input type="password" id="register-password" placeholder="Contraseña" required>
+          <button onclick="register()">Registrarse</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

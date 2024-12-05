@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlideSphere Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SlideSphere Editor</h1>
+    <button id="darkModeToggle">Modo Oscuro</button>
+  </header>
+
+  <main>
+    <section id="editor-section">
+      <h2>Crea tu Presentación</h2>
+      <div class="editor-controls">
+        <button onclick="addSlide()">Agregar Slide</button>
+        <button onclick="addText()">Agregar Cuadro de Texto</button>
+        <label for="imageUpload" class="upload-btn">Subir Imagen</label>
+        <input type="file" id="imageUpload" accept="image/*" onchange="uploadImage(event)" hidden>
+        <label>
+          Estilo de Fuente:
+          <select id="fontStyle">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+          </select>
+        </label>
+        <label>
+          Tamaño de Letra:
+          <select id="fontSize">
+            <option value="14px">14px</option>
+            <option value="18px">18px</option>
+            <option value="24px">24px</option>
+            <option value="32px">32px</option>
+          </select>
+        </label>
+      </div>
+      <div id="slides-container">
+        <!-- Aquí aparecerán los slides -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
